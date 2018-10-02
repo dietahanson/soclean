@@ -82,7 +82,7 @@ def example1():
     badplot = makeplot(bads, plottype = 'bad')
     pans = int(pans*100)
     goodplot = makeplot(goods, plottype = 'good')
-    return render_template("output2.html",
+    return render_template("outputexample.html",
         question_title = question_title,
         question_body = question_body,
         question_tags = question_tags,
@@ -108,7 +108,7 @@ def example2():
     badplot = makeplot(bads, plottype = 'bad')
     pans = int(pans*100)
     goodplot = makeplot(goods, plottype = 'good')
-    return render_template("output2.html",
+    return render_template("outputexample.html",
         question_title = question_title,
         question_body = question_body,
         question_tags = question_tags,

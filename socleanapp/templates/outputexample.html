@@ -43,41 +43,6 @@
 
 <main role="main" class="container">
 
-
-
-
-
-    <div class="container"><!-- probability return -->
-      <div class="starter-template">
-        <p class="lead">
-          <h2>Your question has a {{pans}} % chance of being answered in a day.</h2>
-        </p>
-      </div>
-    </div>
-
-    <div class="container"><!-- plots -->
-      <div class="row">
-        <div class="col-xs-1">
-            <h2>These items need work</h2>
-            {{badplot|safe}}
-        </div>
-        <div class="col-xs-1">
-            <h2>These items look good</h2>
-            {{goodplot|safe}}
-        </div>
-      </div>
-    </div>
-
-
-    <br>
-    <br>
-
-    <div class="container"><!-- enter new or modified input -->
-
-      <div class="starter-template"><!-- header for new entry -->
-        <h2>Try it again!</h2>
-      </div>
-
       <div class="container"><!-- all the fields and the button -->
         <form action="/output" method="GET">
             <div class="column justify-content-center">
@@ -111,8 +76,6 @@
             </div>
         </form>
       </div>
-
-    </div>
 
 
 
