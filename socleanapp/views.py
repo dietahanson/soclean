@@ -45,7 +45,7 @@ def soclean_output():
   myfeatures = extractfeaturevalueslime(question_title,
                                     question_body, question_tags)
   encoder = joblib.load('limeencoder.joblib')
-  with open('explainer', 'rb') as f:
+  with open('explainer2', 'rb') as f:
      explainer = dill.load(f)
   pans, bads, goods = getlime(values = myfeatures, num_features = 11, encoder = encoder, explainer = explainer )
   print("pans = ", pans)
@@ -73,7 +73,7 @@ def example1():
     question_tags_unsplit = "web, web-services"
     myfeatures = extractfeaturevalueslime(question_title, question_body, question_tags)
     encoder = joblib.load('limeencoder.joblib')
-    with open('explainer', 'rb') as f:
+    with open('explainer2', 'rb') as f:
         explainer = dill.load(f)
     pans, bads, goods = getlime(values = myfeatures, num_features = 11, encoder = encoder, explainer = explainer )
     print("pans = ", pans)
@@ -99,7 +99,7 @@ def example2():
     question_tags_unsplit = "python, oop, metaclass, python-datamodel"
     myfeatures = extractfeaturevalueslime(question_title, question_body, question_tags)
     encoder = joblib.load('limeencoder.joblib')
-    with open('explainer', 'rb') as f:
+    with open('explainer2', 'rb') as f:
         explainer = dill.load(f)
     pans, bads, goods = getlime(values = myfeatures, num_features = 11, encoder = encoder, explainer = explainer )
     print("pans = ", pans)
